@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<device type="emmc" idx="0">
+		<partitions>
+			<gpp enabled="true">
+				<size unit="512KB">16</size>
+				<flags>
+					<value>0</value>
+				</flags>
+			</gpp>
+
+			<gpp enabled="true">
+				<size unit="512KB">64</size>
+				<flags>
+					<value>0</value>
+				</flags>
+			</gpp>
+
+			<gpp enabled="true">
+				<size unit="512KB">16</size>
+				<flags>
+					<value>0</value>
+				</flags>
+			</gpp>
+
+			<gpp enabled="true">
+				<size unit="512KB">16</size>
+				<flags>
+					<value>0</value>
+				</flags>
+			</gpp>
+<!--
+			<gpp enabled="false"/>
+				<size unit="512KB">8</size>
+				<flags>
+					<value>0x05</value>
+					<friendly>
+						<reliable-write>enable</reliable-write>
+						<attributes>system</attributes>
+					</friendly>
+				</flags>
+			</gpp>
+-->					
+	<!--
+			<gpp enabled="true"/>
+				<size unit="512KB">4</size>
+				<flags>
+					<value>0x00</value>
+					<friendly>
+						<reliable-write>disable</reliable-write>
+						<attributes>none</attributes>
+					</friendly>
+				</flags>
+			</gpp>
+	-->
+
+		</partitions>		
+<!--
+		<user-data-area>
+			<flags>
+				<value>0x01</value>
+				<friendly>
+					<reliable-write>disable</reliable-write>
+				</friendly>
+			</flags>
+			<base unit="sector">0xdeadbeef</base>
+			<size unit="sector">250</size>
+		</user-data-area>
+-->
+	</device>
+	<device type="ufs" idx="0">
+<!--
+		<descriptor configure = "true">
+			<boot>0x1</boot>
+			<desc-access>0x1</desc-access>
+			<init-power-mode>0x0</init-power-mode>
+			<high-priority-lun>0x0</high-priority-lun>
+			<secure-removal-type>0x0</secure-removal-type>
+			<init-active-icc-level>0x0</init-active-icc-level>
+			<periodic-rtc-update>0x3</periodic-rtc-update>
+		</descriptor>
+-->
+		<lun idx="0">
+			<enable>true</enable>
+			<boot-lun-id>0x0</boot-lun-id>
+			<write-protect>0x0</write-protect>
+			<mem-type>0x0</mem-type>
+			<alloc-units>0x1b0000</alloc-units>
+			<data-reliability>0x0</data-reliability>
+			<logical-block-size>0xc</logical-block-size>
+			<provisioning-type>0x3</provisioning-type>
+			<ctx-caps>0x0</ctx-caps>
+		</lun>
+		<lun idx="1">
+			<enable>true</enable>
+			<boot-lun-id>0x1</boot-lun-id>
+			<write-protect>0x0</write-protect>
+			<mem-type>0x0</mem-type>
+			<alloc-units>0x1000000</alloc-units>
+			<data-reliability>0x0</data-reliability>
+			<logical-block-size>0xc</logical-block-size>
+			<provisioning-type>0x0</provisioning-type>
+			<ctx-caps>0x0</ctx-caps>
+		</lun>
+		<lun idx="2">
+			<enable>true</enable>
+			<boot-lun-id>0x2</boot-lun-id>
+			<write-protect>0x0</write-protect>
+			<mem-type>0x0</mem-type>
+			<alloc-units>0x1000000</alloc-units>
+			<data-reliability>0x0</data-reliability>
+			<logical-block-size>0xc</logical-block-size>
+			<provisioning-type>0x0</provisioning-type>
+			<ctx-caps>0x0</ctx-caps>
+		</lun>
+		<lun idx="3">
+			<enable>true</enable>
+			<boot-lun-id>0x0</boot-lun-id>
+			<write-protect>0x0</write-protect>
+			<mem-type>0x0</mem-type>
+			<alloc-units>0x2000000</alloc-units>
+			<data-reliability>0x0</data-reliability>
+			<logical-block-size>0xc</logical-block-size>
+			<provisioning-type>0x0</provisioning-type>
+			<ctx-caps>0x0</ctx-caps>
+		</lun>
+		<lun idx="4">
+			<enable>true</enable>
+			<boot-lun-id>0x0</boot-lun-id>
+			<write-protect>0x0</write-protect>
+			<mem-type>0x0</mem-type>
+			<alloc-units>0x8000000</alloc-units>
+			<data-reliability>0x0</data-reliability>
+			<logical-block-size>0xc</logical-block-size>
+			<provisioning-type>0x0</provisioning-type>
+			<ctx-caps>0x0</ctx-caps>
+		</lun>
+		<lun idx="5">
+			<enable>true</enable>
+			<boot-lun-id>0x0</boot-lun-id>
+			<write-protect>0x0</write-protect>
+			<mem-type>0x0</mem-type>
+			<alloc-units>0x2000000</alloc-units>
+			<data-reliability>0x0</data-reliability>
+			<logical-block-size>0xc</logical-block-size>
+			<provisioning-type>0x0</provisioning-type>
+			<ctx-caps>0x0</ctx-caps>
+		</lun>
+		<lun idx="6">
+			<enable>true</enable>
+			<boot-lun-id>0x0</boot-lun-id>
+			<write-protect>0x0</write-protect>
+			<mem-type>0x0</mem-type>
+			<alloc-units>0x2000000</alloc-units>
+			<data-reliability>0x0</data-reliability>
+			<logical-block-size>0xc</logical-block-size>
+			<provisioning-type>0x0</provisioning-type>
+			<ctx-caps>0x0</ctx-caps>
+		</lun>
+
+   		<attributes configure = "true">
+			<ref-clock-freq configure="true">0x0</ref-clock-freq> <!-- This is a one time only configuration. It conifugres the ref clock to 19.2MHZ which is what Intel supports and is needed for UFS high speed -->
+		</attributes>
+
+        <!--
+		<attributes configure = "true">
+			<boot>
+				<value>0x01</value> 
+				<friendly>
+					<lun-a>enable</lun-a>
+					<lun-b>disable</lun-b>
+				</friendly>
+			</boot>
+			<current-power-mode>
+				<value>0x00</value>
+			</current-power-mode>
+			<active-icc-level>0xe</active-icc-level>
+			<ooo-data-transfer configure="true">
+				<value>0x01</value>
+				<friendly>enable</friendly>
+			</ooo-data-transfer>
+			<max-data-size>
+				<in unit="512B">0x1</in>
+				<out unit="512B">0x1</out>
+			</max-data-size>
+			<ref-clock-freq configure="true">0x2</ref-clock-freq>
+			<config-descr-lock configure="true">
+				<value>0x1</value>
+				<friendly>enable</friendly>
+			</config-descr-lock>
+			<max-rtt-num>0x1</max-rtt-num>
+			<exception-event-control>
+				<value>0x0005</value>
+				<friendly>
+					<dyncap-event>enable</dyncap-event>
+					<syspool-event>disable</syspool-event>
+					<urgent-bkops>enable</urgent-bkops>
+				</friendly>
+			</exception-event-control>
+			<time-passed unit="sec">7200</time-passed>
+		</attributes>
+-->
+	</device>
+</config>
+

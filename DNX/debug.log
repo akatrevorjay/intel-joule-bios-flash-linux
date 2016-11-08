@@ -1,0 +1,291 @@
+[TID: 0x00007efc528e8740] Initializing notification thread ()
+[TID: 0x00007efc528e8740] Calling libusb_init (MorganfieldWdAPI::MorganfieldWd::DriverInit)
+[TID: 0x00007efc511d8700] Notification thread started (MorganfieldWdAPI::MorganfieldWd::NotificationThreadEntry)
+[TID: 0x00007efc528e8740] Calling libusb_hotplug_register_callback with product ID: a82 (MorganfieldWdAPI::MorganfieldWd::DriverInit)
+[TID: 0x00007efc528e8740] HotPlug LIBUSB_HOTPLUG_EVENT_DEVICE_ARRIVED  (MorganfieldWdAPI::MorganfieldWd::DriverInit)
+[TID: 0x00007efc528e8740] Attaching device, handle: 0x1a9a740 (MorganfieldWdAPI::MorganfieldWd::DriverInit)
+[TID: 0x00007efc528e8740] Device serial number: 27895616 (MorganfieldWdAPI::MorganfieldWd::DriverInit)
+[TID: 0x00007efc528e8740] DB update start (MorganfieldWdAPI::MorganfieldWd::DriverInit)
+[TID: 0x00007efc528e8740] Trying to lock (MorganfieldWdAPI::MorganfieldWd::DriverInit)
+[TID: 0x00007efc528e8740] Locked (MorganfieldWdAPI::MorganfieldWd::DriverInit)
+[TID: 0x00007efc528e8740] To be safe: remove device related data from DB, if exists (MorganfieldWdAPI::MorganfieldWd::DriverInit)
+[TID: 0x00007efc528e8740] DB update start (MorganfieldWdAPI::MorganfieldWd::DriverInit->MorganfieldWdAPI::MorganfieldWd::RemoveBySN)
+[TID: 0x00007efc528e8740] Trying to lock (MorganfieldWdAPI::MorganfieldWd::DriverInit->MorganfieldWdAPI::MorganfieldWd::RemoveBySN)
+[TID: 0x00007efc528e8740] Locked (MorganfieldWdAPI::MorganfieldWd::DriverInit->MorganfieldWdAPI::MorganfieldWd::RemoveBySN)
+[TID: 0x00007efc528e8740] Trying to remove device( sn = 27895616 ) handle from DB (MorganfieldWdAPI::MorganfieldWd::DriverInit->MorganfieldWdAPI::MorganfieldWd::RemoveBySN)
+[TID: 0x00007efc528e8740] Trying to remove device( sn = 27895616 ) IO configuration from DB (MorganfieldWdAPI::MorganfieldWd::DriverInit->MorganfieldWdAPI::MorganfieldWd::RemoveBySN)
+[TID: 0x00007efc528e8740] DB update success (MorganfieldWdAPI::MorganfieldWd::DriverInit->MorganfieldWdAPI::MorganfieldWd::RemoveBySN)
+[TID: 0x00007efc528e8740] Adding device handle to DB (MorganfieldWdAPI::MorganfieldWd::DriverInit)
+[TID: 0x00007efc528e8740] DB update success (MorganfieldWdAPI::MorganfieldWd::DriverInit)
+[TID: 0x00007efc528e8740] Event queue had been Locked (MorganfieldWdAPI::MorganfieldWd::DriverInit->MorganfieldWdAPI::MorganfieldWd::EventPush)
+[TID: 0x00007efc528e8740] Event was pushed the event queue (MorganfieldWdAPI::MorganfieldWd::DriverInit->MorganfieldWdAPI::MorganfieldWd::EventPush)
+[TID: 0x00007efc528e8740] Event queue had been unlocked (MorganfieldWdAPI::MorganfieldWd::DriverInit->MorganfieldWdAPI::MorganfieldWd::EventPush)
+[TID: 0x00007efc528e8740] HotPlug attached device.   (MorganfieldWdAPI::MorganfieldWd::DriverInit)
+[TID: 0x00007efc528e8740] Calling libusb_hotplug_register_callback with product ID: a88 (MorganfieldWdAPI::MorganfieldWd::DriverInit)
+[TID: 0x00007efc511d8700] Event queue had been Locked (MorganfieldWdAPI::MorganfieldWd::NotificationThreadEntry->MorganfieldWdAPI::MorganfieldWd::EventPop)
+[TID: 0x00007efc528e8740] Calling libusb_hotplug_register_callback with product ID: a84 (MorganfieldWdAPI::MorganfieldWd::DriverInit)
+[TID: 0x00007efc511d8700] Event was poped out of the event queue (MorganfieldWdAPI::MorganfieldWd::NotificationThreadEntry->MorganfieldWdAPI::MorganfieldWd::EventPop)
+[TID: 0x00007efc511d8700] Event queue had been unlocked (MorganfieldWdAPI::MorganfieldWd::NotificationThreadEntry->MorganfieldWdAPI::MorganfieldWd::EventPop)
+[TID: 0x00007efc528e8740] Calling libusb_hotplug_register_callback with product ID: a86 (MorganfieldWdAPI::MorganfieldWd::DriverInit)
+[TID: 0x00007efc511d8700] NotificationThreadEntry: Device attach (MorganfieldWdAPI::MorganfieldWd::NotificationThreadEntry)
+[TID: 0x00007efc528e8740] Calling libusb_hotplug_register_callback with product ID: a8a (MorganfieldWdAPI::MorganfieldWd::DriverInit)
+[TID: 0x00007efc511d8700] Trying to lock (MorganfieldWdAPI::MorganfieldWd::NotificationThreadEntry->MorganfieldWdAPI::MorganfieldWd::FindSNByHandle)
+[TID: 0x00007efc511d8700] Locked (MorganfieldWdAPI::MorganfieldWd::NotificationThreadEntry->MorganfieldWdAPI::MorganfieldWd::FindSNByHandle)
+[TID: 0x00007efc511d8700] Search DB for device handle: 0x1a9a740 (MorganfieldWdAPI::MorganfieldWd::NotificationThreadEntry->MorganfieldWdAPI::MorganfieldWd::FindSNByHandle)
+[TID: 0x00007efc511d8700] Current device handle: 0x1a9a740, serial: 27895616 (MorganfieldWdAPI::MorganfieldWd::NotificationThreadEntry->MorganfieldWdAPI::MorganfieldWd::FindSNByHandle)
+[TID: 0x00007efc511d8700] Device found, serial: 27895616 (MorganfieldWdAPI::MorganfieldWd::NotificationThreadEntry->MorganfieldWdAPI::MorganfieldWd::FindSNByHandle)
+[TID: 0x00007efc511d8700] Locked (MorganfieldWdAPI::MorganfieldWd::NotificationThreadEntry->MorganfieldWdAPI::MorganfieldWd::NotifyDeviceAttach)
+[TID: 0x00007efc528e8740] libusb initialization succeeded. (MorganfieldWdAPI::MorganfieldWd::DriverInit)
+[TID: 0x00007efc528e8740] Locked (MorganfieldWdAPI::MorganfieldWd::Register)
+[TID: 0x00007efc528e8740] Adding callback object to DB (MorganfieldWdAPI::MorganfieldWd::Register)
+[TID: 0x00007efc528e8740] DB update success (MorganfieldWdAPI::MorganfieldWd::Register)
+[TID: 0x00007efc528e8740] Trying to lock (MorganfieldWdAPI::MorganfieldWd::EnumerateDevices)
+[TID: 0x00007efc528e8740] Locked (MorganfieldWdAPI::MorganfieldWd::EnumerateDevices)
+[TID: 0x00007efc528e8740] Current device serial: 27895616 (MorganfieldWdAPI::MorganfieldWd::EnumerateDevices)
+[TID: 0x00007efc528e8740] [SN: 27895616] Id device operation started
+[TID: 0x00007efc528e8740] [SN: 27895616] Sending "Id Device" DnX command
+[TID: 0x00007efc528e8740] [SN: 27895616] TX: Payload only: no
+[TID: 0x00007efc528e8740] [SN: 27895616] TX: Data length: 48
+[TID: 0x00007efc528e8740] [SN: 27895616] TX: Command: 1
+[TID: 0x00007efc528e8740] [SN: 27895616] TX: Marker: 0
+[TID: 0x00007efc528e8740] [SN: 27895616] TX: Header length: 16
+[TID: 0x00007efc528e8740] [SN: 27895616] TX: Additional data length: 0
+[TID: 0x00007efc528e8740] [SN: 27895616] TX: Message length: 64
+[TID: 0x00007efc528e8740] Configuring device IO, serial: 27895616 (MorganfieldWdAPI::MorganfieldWd::Write)
+[TID: 0x00007efc528e8740] Configure device IO by serial: 27895616 (MorganfieldWdAPI::MorganfieldWd::Write->MorganfieldWdAPI::MorganfieldWd::ConfigureDeviceIO)
+[TID: 0x00007efc528e8740] Trying to lock (MorganfieldWdAPI::MorganfieldWd::Write->MorganfieldWdAPI::MorganfieldWd::ConfigureDeviceIO)
+[TID: 0x00007efc528e8740] Locked (MorganfieldWdAPI::MorganfieldWd::Write->MorganfieldWdAPI::MorganfieldWd::ConfigureDeviceIO)
+[TID: 0x00007efc528e8740] Searching DB for device handle (MorganfieldWdAPI::MorganfieldWd::Write->MorganfieldWdAPI::MorganfieldWd::ConfigureDeviceIO)
+[TID: 0x00007efc528e8740] Found device handle: 0x1a9a740 (MorganfieldWdAPI::MorganfieldWd::Write->MorganfieldWdAPI::MorganfieldWd::ConfigureDeviceIO)
+[TID: 0x00007efc528e8740] Searching DB for device IO configuration (MorganfieldWdAPI::MorganfieldWd::Write->MorganfieldWdAPI::MorganfieldWd::ConfigureDeviceIO)
+[TID: 0x00007efc528e8740] Calling libusb_get_device( handle = 0x1a9a740 ) (MorganfieldWdAPI::MorganfieldWd::Write->MorganfieldWdAPI::MorganfieldWd::ConfigureDeviceIO)
+[TID: 0x00007efc528e8740] libusb_get_device success (MorganfieldWdAPI::MorganfieldWd::Write->MorganfieldWdAPI::MorganfieldWd::ConfigureDeviceIO)
+[TID: 0x00007efc528e8740] Searching device for alternate setting (MorganfieldWdAPI::MorganfieldWd::Write->MorganfieldWdAPI::MorganfieldWd::ConfigureDeviceIO)
+[TID: 0x00007efc528e8740] Number of interfaces for active configuration: 1 (MorganfieldWdAPI::MorganfieldWd::Write->MorganfieldWdAPI::MorganfieldWd::ConfigureDeviceIO->MorganfieldWdAPI::MorganfieldWd::GetAltSetting)
+[TID: 0x00007efc528e8740] Current interface index: 0 (MorganfieldWdAPI::MorganfieldWd::Write->MorganfieldWdAPI::MorganfieldWd::ConfigureDeviceIO->MorganfieldWdAPI::MorganfieldWd::GetAltSetting)
+[TID: 0x00007efc528e8740] Number of alternate settings: 1 (MorganfieldWdAPI::MorganfieldWd::Write->MorganfieldWdAPI::MorganfieldWd::ConfigureDeviceIO->MorganfieldWdAPI::MorganfieldWd::GetAltSetting->MorganfieldWdAPI::MorganfieldWd::GetAltSetting)
+[TID: 0x00007efc528e8740] Current alternate setting index: 0 (MorganfieldWdAPI::MorganfieldWd::Write->MorganfieldWdAPI::MorganfieldWd::ConfigureDeviceIO->MorganfieldWdAPI::MorganfieldWd::GetAltSetting->MorganfieldWdAPI::MorganfieldWd::GetAltSetting)
+[TID: 0x00007efc528e8740] Number of endpoints: 2 (MorganfieldWdAPI::MorganfieldWd::Write->MorganfieldWdAPI::MorganfieldWd::ConfigureDeviceIO->MorganfieldWdAPI::MorganfieldWd::GetAltSetting->MorganfieldWdAPI::MorganfieldWd::GetAltSetting->MorganfieldWdAPI::MorganfieldWd::IoPipeSearch)
+[TID: 0x00007efc528e8740] pipe[0] address: 2 (MorganfieldWdAPI::MorganfieldWd::Write->MorganfieldWdAPI::MorganfieldWd::ConfigureDeviceIO->MorganfieldWdAPI::MorganfieldWd::GetAltSetting->MorganfieldWdAPI::MorganfieldWd::GetAltSetting->MorganfieldWdAPI::MorganfieldWd::IoPipeSearch)
+[TID: 0x00007efc528e8740] pipe[0] attributes: 2 (MorganfieldWdAPI::MorganfieldWd::Write->MorganfieldWdAPI::MorganfieldWd::ConfigureDeviceIO->MorganfieldWdAPI::MorganfieldWd::GetAltSetting->MorganfieldWdAPI::MorganfieldWd::GetAltSetting->MorganfieldWdAPI::MorganfieldWd::IoPipeSearch)
+[TID: 0x00007efc528e8740] pipe[0] max packet size: 200 (MorganfieldWdAPI::MorganfieldWd::Write->MorganfieldWdAPI::MorganfieldWd::ConfigureDeviceIO->MorganfieldWdAPI::MorganfieldWd::GetAltSetting->MorganfieldWdAPI::MorganfieldWd::GetAltSetting->MorganfieldWdAPI::MorganfieldWd::IoPipeSearch)
+[TID: 0x00007efc528e8740] Pipe(OUT) matches required configuration (MorganfieldWdAPI::MorganfieldWd::Write->MorganfieldWdAPI::MorganfieldWd::ConfigureDeviceIO->MorganfieldWdAPI::MorganfieldWd::GetAltSetting->MorganfieldWdAPI::MorganfieldWd::GetAltSetting->MorganfieldWdAPI::MorganfieldWd::IoPipeSearch)
+[TID: 0x00007efc528e8740] pipe[1] address: 82 (MorganfieldWdAPI::MorganfieldWd::Write->MorganfieldWdAPI::MorganfieldWd::ConfigureDeviceIO->MorganfieldWdAPI::MorganfieldWd::GetAltSetting->MorganfieldWdAPI::MorganfieldWd::GetAltSetting->MorganfieldWdAPI::MorganfieldWd::IoPipeSearch)
+[TID: 0x00007efc528e8740] pipe[1] attributes: 2 (MorganfieldWdAPI::MorganfieldWd::Write->MorganfieldWdAPI::MorganfieldWd::ConfigureDeviceIO->MorganfieldWdAPI::MorganfieldWd::GetAltSetting->MorganfieldWdAPI::MorganfieldWd::GetAltSetting->MorganfieldWdAPI::MorganfieldWd::IoPipeSearch)
+[TID: 0x00007efc528e8740] pipe[1] max packet size: 200 (MorganfieldWdAPI::MorganfieldWd::Write->MorganfieldWdAPI::MorganfieldWd::ConfigureDeviceIO->MorganfieldWdAPI::MorganfieldWd::GetAltSetting->MorganfieldWdAPI::MorganfieldWd::GetAltSetting->MorganfieldWdAPI::MorganfieldWd::IoPipeSearch)
+[TID: 0x00007efc528e8740] Pipe(IN) matches required configuration (MorganfieldWdAPI::MorganfieldWd::Write->MorganfieldWdAPI::MorganfieldWd::ConfigureDeviceIO->MorganfieldWdAPI::MorganfieldWd::GetAltSetting->MorganfieldWdAPI::MorganfieldWd::GetAltSetting->MorganfieldWdAPI::MorganfieldWd::IoPipeSearch)
+[TID: 0x00007efc528e8740] Pipe IN found: 82 (MorganfieldWdAPI::MorganfieldWd::Write->MorganfieldWdAPI::MorganfieldWd::ConfigureDeviceIO->MorganfieldWdAPI::MorganfieldWd::GetAltSetting->MorganfieldWdAPI::MorganfieldWd::GetAltSetting->MorganfieldWdAPI::MorganfieldWd::IoPipeSearch)
+[TID: 0x00007efc528e8740] Pipe OUT found: 2 (MorganfieldWdAPI::MorganfieldWd::Write->MorganfieldWdAPI::MorganfieldWd::ConfigureDeviceIO->MorganfieldWdAPI::MorganfieldWd::GetAltSetting->MorganfieldWdAPI::MorganfieldWd::GetAltSetting->MorganfieldWdAPI::MorganfieldWd::IoPipeSearch)
+[TID: 0x00007efc528e8740] Required pipe configuration was found for alternate setting #0 (MorganfieldWdAPI::MorganfieldWd::Write->MorganfieldWdAPI::MorganfieldWd::ConfigureDeviceIO->MorganfieldWdAPI::MorganfieldWd::GetAltSetting->MorganfieldWdAPI::MorganfieldWd::GetAltSetting)
+[TID: 0x00007efc528e8740] Alternate setting was found for interface #0 (MorganfieldWdAPI::MorganfieldWd::Write->MorganfieldWdAPI::MorganfieldWd::ConfigureDeviceIO->MorganfieldWdAPI::MorganfieldWd::GetAltSetting)
+[TID: 0x00007efc528e8740] Alternate setting had been found: Interface number: 0; Alternate setting number: 0 (MorganfieldWdAPI::MorganfieldWd::Write->MorganfieldWdAPI::MorganfieldWd::ConfigureDeviceIO)
+[TID: 0x00007efc528e8740] Pipe IN: Endpoint address: 82Max packet size: 200; Attributes: 2 (MorganfieldWdAPI::MorganfieldWd::Write->MorganfieldWdAPI::MorganfieldWd::ConfigureDeviceIO)
+[TID: 0x00007efc528e8740] Pipe OUT: Endpoint address: 2Max packet size: 200; Attributes: 2 (MorganfieldWdAPI::MorganfieldWd::Write->MorganfieldWdAPI::MorganfieldWd::ConfigureDeviceIO)
+[TID: 0x00007efc528e8740] Calling libusb_claim_interface( handle = 0x1a9a740, interface_number = 0 ) (MorganfieldWdAPI::MorganfieldWd::Write->MorganfieldWdAPI::MorganfieldWd::ConfigureDeviceIO)
+[TID: 0x00007efc528e8740] libusb_claim_interface success (MorganfieldWdAPI::MorganfieldWd::Write->MorganfieldWdAPI::MorganfieldWd::ConfigureDeviceIO)
+[TID: 0x00007efc528e8740] Device IO configured, handle: 0x1a9a740 (MorganfieldWdAPI::MorganfieldWd::Write)
+[TID: 0x00007efc528e8740] Calling libusb_bulk_transfer( dev_handle = 0x1a9a740, endpoint = 2, length = 64, timeout  = 5000 ) (MorganfieldWdAPI::MorganfieldWd::Write)
+[TID: 0x00007efc528e8740] Bytes sent: 64 (MorganfieldWdAPI::MorganfieldWd::Write)
+[TID: 0x00007efc528e8740] [SN: 27895616] Reading first packet
+[TID: 0x00007efc528e8740] Configuring device IO, serial: 27895616 (DnxCmd::read->MorganfieldWdAPI::MorganfieldWd::Read)
+[TID: 0x00007efc528e8740] Configure device IO by serial: 27895616 (DnxCmd::read->MorganfieldWdAPI::MorganfieldWd::Read->MorganfieldWdAPI::MorganfieldWd::ConfigureDeviceIO)
+[TID: 0x00007efc528e8740] Trying to lock (DnxCmd::read->MorganfieldWdAPI::MorganfieldWd::Read->MorganfieldWdAPI::MorganfieldWd::ConfigureDeviceIO)
+[TID: 0x00007efc528e8740] Locked (DnxCmd::read->MorganfieldWdAPI::MorganfieldWd::Read->MorganfieldWdAPI::MorganfieldWd::ConfigureDeviceIO)
+[TID: 0x00007efc528e8740] Searching DB for device handle (DnxCmd::read->MorganfieldWdAPI::MorganfieldWd::Read->MorganfieldWdAPI::MorganfieldWd::ConfigureDeviceIO)
+[TID: 0x00007efc528e8740] Found device handle: 0x1a9a740 (DnxCmd::read->MorganfieldWdAPI::MorganfieldWd::Read->MorganfieldWdAPI::MorganfieldWd::ConfigureDeviceIO)
+[TID: 0x00007efc528e8740] Searching DB for device IO configuration (DnxCmd::read->MorganfieldWdAPI::MorganfieldWd::Read->MorganfieldWdAPI::MorganfieldWd::ConfigureDeviceIO)
+[TID: 0x00007efc528e8740] Found device IO configuration (DnxCmd::read->MorganfieldWdAPI::MorganfieldWd::Read->MorganfieldWdAPI::MorganfieldWd::ConfigureDeviceIO)
+[TID: 0x00007efc528e8740] Device IO configured, handle: 0x1a9a740 (DnxCmd::read->MorganfieldWdAPI::MorganfieldWd::Read)
+[TID: 0x00007efc528e8740] Calling libusb_bulk_transfer( dev_handle = 0x1a9a740, endpoint = 82, length = 512, timeout  = 5000 ) (DnxCmd::read->MorganfieldWdAPI::MorganfieldWd::Read)
+[TID: 0x00007efc528e8740] Bytes transferred: 64 (DnxCmd::read->MorganfieldWdAPI::MorganfieldWd::Read)
+[TID: 0x00007efc528e8740] [SN: 27895616] RX: Command: 800001
+[TID: 0x00007efc528e8740] [SN: 27895616] RX: Marker: 0
+[TID: 0x00007efc528e8740] [SN: 27895616] RX: Message length: 64
+[TID: 0x00007efc528e8740] [SN: 27895616] RX: Header length: 20
+[TID: 0x00007efc528e8740] [SN: 27895616] RX: Data length (calculated): 44
+[TID: 0x00007efc528e8740] [SN: 27895616] RX: Additional data length: 0
+[TID: 0x00007efc528e8740] [SN: 27895616] RX: Flags: 0
+[TID: 0x00007efc528e8740] [SN: 27895616] RX: FW status: 0
+[TID: 0x00007efc528e8740] [SN: 27895616] Success
+[TID: 0x00007efc528e8740] [SN: 27895616] Sending "start over" DnX command to check if we are in ROM or DNX ctx
+[TID: 0x00007efc528e8740] [SN: 27895616] Resetting DnX protocol
+[TID: 0x00007efc528e8740] [SN: 27895616] TX: Payload only: no
+[TID: 0x00007efc528e8740] [SN: 27895616] TX: Data length: 48
+[TID: 0x00007efc528e8740] [SN: 27895616] TX: Command: 13
+[TID: 0x00007efc528e8740] [SN: 27895616] TX: Marker: 0
+[TID: 0x00007efc528e8740] [SN: 27895616] TX: Header length: 16
+[TID: 0x00007efc528e8740] [SN: 27895616] TX: Additional data length: 0
+[TID: 0x00007efc528e8740] [SN: 27895616] TX: Message length: 64
+[TID: 0x00007efc528e8740] Configuring device IO, serial: 27895616 (MorganfieldWdAPI::MorganfieldWd::Write)
+[TID: 0x00007efc528e8740] Configure device IO by serial: 27895616 (MorganfieldWdAPI::MorganfieldWd::Write->MorganfieldWdAPI::MorganfieldWd::ConfigureDeviceIO)
+[TID: 0x00007efc528e8740] Trying to lock (MorganfieldWdAPI::MorganfieldWd::Write->MorganfieldWdAPI::MorganfieldWd::ConfigureDeviceIO)
+[TID: 0x00007efc528e8740] Locked (MorganfieldWdAPI::MorganfieldWd::Write->MorganfieldWdAPI::MorganfieldWd::ConfigureDeviceIO)
+[TID: 0x00007efc528e8740] Searching DB for device handle (MorganfieldWdAPI::MorganfieldWd::Write->MorganfieldWdAPI::MorganfieldWd::ConfigureDeviceIO)
+[TID: 0x00007efc528e8740] Found device handle: 0x1a9a740 (MorganfieldWdAPI::MorganfieldWd::Write->MorganfieldWdAPI::MorganfieldWd::ConfigureDeviceIO)
+[TID: 0x00007efc528e8740] Searching DB for device IO configuration (MorganfieldWdAPI::MorganfieldWd::Write->MorganfieldWdAPI::MorganfieldWd::ConfigureDeviceIO)
+[TID: 0x00007efc528e8740] Found device IO configuration (MorganfieldWdAPI::MorganfieldWd::Write->MorganfieldWdAPI::MorganfieldWd::ConfigureDeviceIO)
+[TID: 0x00007efc528e8740] Device IO configured, handle: 0x1a9a740 (MorganfieldWdAPI::MorganfieldWd::Write)
+[TID: 0x00007efc528e8740] Calling libusb_bulk_transfer( dev_handle = 0x1a9a740, endpoint = 2, length = 64, timeout  = 5000 ) (MorganfieldWdAPI::MorganfieldWd::Write)
+[TID: 0x00007efc528e8740] Bytes sent: 64 (MorganfieldWdAPI::MorganfieldWd::Write)
+[TID: 0x00007efc528e8740] [SN: 27895616] Reading first packet
+[TID: 0x00007efc528e8740] Configuring device IO, serial: 27895616 (DnxCmd::read->MorganfieldWdAPI::MorganfieldWd::Read)
+[TID: 0x00007efc528e8740] Configure device IO by serial: 27895616 (DnxCmd::read->MorganfieldWdAPI::MorganfieldWd::Read->MorganfieldWdAPI::MorganfieldWd::ConfigureDeviceIO)
+[TID: 0x00007efc528e8740] Trying to lock (DnxCmd::read->MorganfieldWdAPI::MorganfieldWd::Read->MorganfieldWdAPI::MorganfieldWd::ConfigureDeviceIO)
+[TID: 0x00007efc528e8740] Locked (DnxCmd::read->MorganfieldWdAPI::MorganfieldWd::Read->MorganfieldWdAPI::MorganfieldWd::ConfigureDeviceIO)
+[TID: 0x00007efc528e8740] Searching DB for device handle (DnxCmd::read->MorganfieldWdAPI::MorganfieldWd::Read->MorganfieldWdAPI::MorganfieldWd::ConfigureDeviceIO)
+[TID: 0x00007efc528e8740] Found device handle: 0x1a9a740 (DnxCmd::read->MorganfieldWdAPI::MorganfieldWd::Read->MorganfieldWdAPI::MorganfieldWd::ConfigureDeviceIO)
+[TID: 0x00007efc528e8740] Searching DB for device IO configuration (DnxCmd::read->MorganfieldWdAPI::MorganfieldWd::Read->MorganfieldWdAPI::MorganfieldWd::ConfigureDeviceIO)
+[TID: 0x00007efc528e8740] Found device IO configuration (DnxCmd::read->MorganfieldWdAPI::MorganfieldWd::Read->MorganfieldWdAPI::MorganfieldWd::ConfigureDeviceIO)
+[TID: 0x00007efc528e8740] Device IO configured, handle: 0x1a9a740 (DnxCmd::read->MorganfieldWdAPI::MorganfieldWd::Read)
+[TID: 0x00007efc528e8740] Calling libusb_bulk_transfer( dev_handle = 0x1a9a740, endpoint = 82, length = 512, timeout  = 5000 ) (DnxCmd::read->MorganfieldWdAPI::MorganfieldWd::Read)
+[TID: 0x00007efc528e8740] Bytes transferred: 64 (DnxCmd::read->MorganfieldWdAPI::MorganfieldWd::Read)
+[TID: 0x00007efc528e8740] [SN: 27895616] RX: Command: 800013
+[TID: 0x00007efc528e8740] [SN: 27895616] RX: Marker: 0
+[TID: 0x00007efc528e8740] [SN: 27895616] RX: Message length: 64
+[TID: 0x00007efc528e8740] [SN: 27895616] RX: Header length: 20
+[TID: 0x00007efc528e8740] [SN: 27895616] RX: Data length (calculated): 44
+[TID: 0x00007efc528e8740] [SN: 27895616] RX: Additional data length: 0
+[TID: 0x00007efc528e8740] [SN: 27895616] RX: Flags: 0
+[TID: 0x00007efc528e8740] [SN: 27895616] RX: FW status: 0
+[TID: 0x00007efc528e8740] [SN: 27895616] Success
+[TID: 0x00007efc528e8740] [SN: 27895616] Current context: 0x1
+[TID: 0x00007efc528e8740] [SN: 27895616] Id device operation had been accomplished succesfully
+[TID: 0x00007efc528e8740] Trying to lock (MorganfieldWdAPI::MorganfieldWd::EnumerateDevices)
+[TID: 0x00007efc528e8740] Locked (MorganfieldWdAPI::MorganfieldWd::EnumerateDevices)
+[TID: 0x00007efc528e8740] Current device serial: 27895616 (MorganfieldWdAPI::MorganfieldWd::EnumerateDevices)
+[TID: 0x00007efc528e8740] [SN: 27895616] Clear data operation started
+[TID: 0x00007efc528e8740] [SN: 27895616] Resetting DnX protocol
+[TID: 0x00007efc528e8740] [SN: 27895616] TX: Payload only: no
+[TID: 0x00007efc528e8740] [SN: 27895616] TX: Data length: 48
+[TID: 0x00007efc528e8740] [SN: 27895616] TX: Command: 13
+[TID: 0x00007efc528e8740] [SN: 27895616] TX: Marker: 0
+[TID: 0x00007efc528e8740] [SN: 27895616] TX: Header length: 16
+[TID: 0x00007efc528e8740] [SN: 27895616] TX: Additional data length: 0
+[TID: 0x00007efc528e8740] [SN: 27895616] TX: Message length: 64
+[TID: 0x00007efc528e8740] Configuring device IO, serial: 27895616 (MorganfieldWdAPI::MorganfieldWd::Write)
+[TID: 0x00007efc528e8740] Configure device IO by serial: 27895616 (MorganfieldWdAPI::MorganfieldWd::Write->MorganfieldWdAPI::MorganfieldWd::ConfigureDeviceIO)
+[TID: 0x00007efc528e8740] Trying to lock (MorganfieldWdAPI::MorganfieldWd::Write->MorganfieldWdAPI::MorganfieldWd::ConfigureDeviceIO)
+[TID: 0x00007efc528e8740] Locked (MorganfieldWdAPI::MorganfieldWd::Write->MorganfieldWdAPI::MorganfieldWd::ConfigureDeviceIO)
+[TID: 0x00007efc528e8740] Searching DB for device handle (MorganfieldWdAPI::MorganfieldWd::Write->MorganfieldWdAPI::MorganfieldWd::ConfigureDeviceIO)
+[TID: 0x00007efc528e8740] Found device handle: 0x1a9a740 (MorganfieldWdAPI::MorganfieldWd::Write->MorganfieldWdAPI::MorganfieldWd::ConfigureDeviceIO)
+[TID: 0x00007efc528e8740] Searching DB for device IO configuration (MorganfieldWdAPI::MorganfieldWd::Write->MorganfieldWdAPI::MorganfieldWd::ConfigureDeviceIO)
+[TID: 0x00007efc528e8740] Found device IO configuration (MorganfieldWdAPI::MorganfieldWd::Write->MorganfieldWdAPI::MorganfieldWd::ConfigureDeviceIO)
+[TID: 0x00007efc528e8740] Device IO configured, handle: 0x1a9a740 (MorganfieldWdAPI::MorganfieldWd::Write)
+[TID: 0x00007efc528e8740] Calling libusb_bulk_transfer( dev_handle = 0x1a9a740, endpoint = 2, length = 64, timeout  = 5000 ) (MorganfieldWdAPI::MorganfieldWd::Write)
+[TID: 0x00007efc528e8740] Bytes sent: 64 (MorganfieldWdAPI::MorganfieldWd::Write)
+[TID: 0x00007efc528e8740] [SN: 27895616] Reading first packet
+[TID: 0x00007efc528e8740] Configuring device IO, serial: 27895616 (DnxCmd::read->MorganfieldWdAPI::MorganfieldWd::Read)
+[TID: 0x00007efc528e8740] Configure device IO by serial: 27895616 (DnxCmd::read->MorganfieldWdAPI::MorganfieldWd::Read->MorganfieldWdAPI::MorganfieldWd::ConfigureDeviceIO)
+[TID: 0x00007efc528e8740] Trying to lock (DnxCmd::read->MorganfieldWdAPI::MorganfieldWd::Read->MorganfieldWdAPI::MorganfieldWd::ConfigureDeviceIO)
+[TID: 0x00007efc528e8740] Locked (DnxCmd::read->MorganfieldWdAPI::MorganfieldWd::Read->MorganfieldWdAPI::MorganfieldWd::ConfigureDeviceIO)
+[TID: 0x00007efc528e8740] Searching DB for device handle (DnxCmd::read->MorganfieldWdAPI::MorganfieldWd::Read->MorganfieldWdAPI::MorganfieldWd::ConfigureDeviceIO)
+[TID: 0x00007efc528e8740] Found device handle: 0x1a9a740 (DnxCmd::read->MorganfieldWdAPI::MorganfieldWd::Read->MorganfieldWdAPI::MorganfieldWd::ConfigureDeviceIO)
+[TID: 0x00007efc528e8740] Searching DB for device IO configuration (DnxCmd::read->MorganfieldWdAPI::MorganfieldWd::Read->MorganfieldWdAPI::MorganfieldWd::ConfigureDeviceIO)
+[TID: 0x00007efc528e8740] Found device IO configuration (DnxCmd::read->MorganfieldWdAPI::MorganfieldWd::Read->MorganfieldWdAPI::MorganfieldWd::ConfigureDeviceIO)
+[TID: 0x00007efc528e8740] Device IO configured, handle: 0x1a9a740 (DnxCmd::read->MorganfieldWdAPI::MorganfieldWd::Read)
+[TID: 0x00007efc528e8740] Calling libusb_bulk_transfer( dev_handle = 0x1a9a740, endpoint = 82, length = 512, timeout  = 5000 ) (DnxCmd::read->MorganfieldWdAPI::MorganfieldWd::Read)
+[TID: 0x00007efc528e8740] Bytes transferred: 64 (DnxCmd::read->MorganfieldWdAPI::MorganfieldWd::Read)
+[TID: 0x00007efc528e8740] [SN: 27895616] RX: Command: 800013
+[TID: 0x00007efc528e8740] [SN: 27895616] RX: Marker: 0
+[TID: 0x00007efc528e8740] [SN: 27895616] RX: Message length: 64
+[TID: 0x00007efc528e8740] [SN: 27895616] RX: Header length: 20
+[TID: 0x00007efc528e8740] [SN: 27895616] RX: Data length (calculated): 44
+[TID: 0x00007efc528e8740] [SN: 27895616] RX: Additional data length: 0
+[TID: 0x00007efc528e8740] [SN: 27895616] RX: Flags: 0
+[TID: 0x00007efc528e8740] [SN: 27895616] RX: FW status: 0
+[TID: 0x00007efc528e8740] [SN: 27895616] Success
+[TID: 0x00007efc528e8740] [SN: 27895616] Current context: 0x1
+[TID: 0x00007efc528e8740] [SN: 27895616] Setting DnX protocol version and timeout
+[TID: 0x00007efc528e8740] [SN: 27895616] Sending "Set Protocol" DnX command
+[TID: 0x00007efc528e8740] [SN: 27895616] Protocol version: 0x1
+[TID: 0x00007efc528e8740] [SN: 27895616] TX: Payload only: no
+[TID: 0x00007efc528e8740] [SN: 27895616] TX: Data length: 48
+[TID: 0x00007efc528e8740] [SN: 27895616] TX: Command: 17
+[TID: 0x00007efc528e8740] [SN: 27895616] TX: Marker: 0
+[TID: 0x00007efc528e8740] [SN: 27895616] TX: Header length: 16
+[TID: 0x00007efc528e8740] [SN: 27895616] TX: Additional data length: 0
+[TID: 0x00007efc528e8740] [SN: 27895616] TX: Message length: 64
+[TID: 0x00007efc528e8740] Configuring device IO, serial: 27895616 (MorganfieldWdAPI::MorganfieldWd::Write)
+[TID: 0x00007efc528e8740] Configure device IO by serial: 27895616 (MorganfieldWdAPI::MorganfieldWd::Write->MorganfieldWdAPI::MorganfieldWd::ConfigureDeviceIO)
+[TID: 0x00007efc528e8740] Trying to lock (MorganfieldWdAPI::MorganfieldWd::Write->MorganfieldWdAPI::MorganfieldWd::ConfigureDeviceIO)
+[TID: 0x00007efc528e8740] Locked (MorganfieldWdAPI::MorganfieldWd::Write->MorganfieldWdAPI::MorganfieldWd::ConfigureDeviceIO)
+[TID: 0x00007efc528e8740] Searching DB for device handle (MorganfieldWdAPI::MorganfieldWd::Write->MorganfieldWdAPI::MorganfieldWd::ConfigureDeviceIO)
+[TID: 0x00007efc528e8740] Found device handle: 0x1a9a740 (MorganfieldWdAPI::MorganfieldWd::Write->MorganfieldWdAPI::MorganfieldWd::ConfigureDeviceIO)
+[TID: 0x00007efc528e8740] Searching DB for device IO configuration (MorganfieldWdAPI::MorganfieldWd::Write->MorganfieldWdAPI::MorganfieldWd::ConfigureDeviceIO)
+[TID: 0x00007efc528e8740] Found device IO configuration (MorganfieldWdAPI::MorganfieldWd::Write->MorganfieldWdAPI::MorganfieldWd::ConfigureDeviceIO)
+[TID: 0x00007efc528e8740] Device IO configured, handle: 0x1a9a740 (MorganfieldWdAPI::MorganfieldWd::Write)
+[TID: 0x00007efc528e8740] Calling libusb_bulk_transfer( dev_handle = 0x1a9a740, endpoint = 2, length = 64, timeout  = 5000 ) (MorganfieldWdAPI::MorganfieldWd::Write)
+[TID: 0x00007efc528e8740] Bytes sent: 64 (MorganfieldWdAPI::MorganfieldWd::Write)
+[TID: 0x00007efc528e8740] [SN: 27895616] Reading first packet
+[TID: 0x00007efc528e8740] Configuring device IO, serial: 27895616 (DnxCmd::read->MorganfieldWdAPI::MorganfieldWd::Read)
+[TID: 0x00007efc528e8740] Configure device IO by serial: 27895616 (DnxCmd::read->MorganfieldWdAPI::MorganfieldWd::Read->MorganfieldWdAPI::MorganfieldWd::ConfigureDeviceIO)
+[TID: 0x00007efc528e8740] Trying to lock (DnxCmd::read->MorganfieldWdAPI::MorganfieldWd::Read->MorganfieldWdAPI::MorganfieldWd::ConfigureDeviceIO)
+[TID: 0x00007efc528e8740] Locked (DnxCmd::read->MorganfieldWdAPI::MorganfieldWd::Read->MorganfieldWdAPI::MorganfieldWd::ConfigureDeviceIO)
+[TID: 0x00007efc528e8740] Searching DB for device handle (DnxCmd::read->MorganfieldWdAPI::MorganfieldWd::Read->MorganfieldWdAPI::MorganfieldWd::ConfigureDeviceIO)
+[TID: 0x00007efc528e8740] Found device handle: 0x1a9a740 (DnxCmd::read->MorganfieldWdAPI::MorganfieldWd::Read->MorganfieldWdAPI::MorganfieldWd::ConfigureDeviceIO)
+[TID: 0x00007efc528e8740] Searching DB for device IO configuration (DnxCmd::read->MorganfieldWdAPI::MorganfieldWd::Read->MorganfieldWdAPI::MorganfieldWd::ConfigureDeviceIO)
+[TID: 0x00007efc528e8740] Found device IO configuration (DnxCmd::read->MorganfieldWdAPI::MorganfieldWd::Read->MorganfieldWdAPI::MorganfieldWd::ConfigureDeviceIO)
+[TID: 0x00007efc528e8740] Device IO configured, handle: 0x1a9a740 (DnxCmd::read->MorganfieldWdAPI::MorganfieldWd::Read)
+[TID: 0x00007efc528e8740] Calling libusb_bulk_transfer( dev_handle = 0x1a9a740, endpoint = 82, length = 512, timeout  = 5000 ) (DnxCmd::read->MorganfieldWdAPI::MorganfieldWd::Read)
+[TID: 0x00007efc528e8740] Bytes transferred: 64 (DnxCmd::read->MorganfieldWdAPI::MorganfieldWd::Read)
+[TID: 0x00007efc528e8740] [SN: 27895616] RX: Command: 800017
+[TID: 0x00007efc528e8740] [SN: 27895616] RX: Marker: 0
+[TID: 0x00007efc528e8740] [SN: 27895616] RX: Message length: 64
+[TID: 0x00007efc528e8740] [SN: 27895616] RX: Header length: 20
+[TID: 0x00007efc528e8740] [SN: 27895616] RX: Data length (calculated): 44
+[TID: 0x00007efc528e8740] [SN: 27895616] RX: Additional data length: 0
+[TID: 0x00007efc528e8740] [SN: 27895616] RX: Flags: 0
+[TID: 0x00007efc528e8740] [SN: 27895616] RX: FW status: 0
+[TID: 0x00007efc528e8740] [SN: 27895616] Success
+[TID: 0x00007efc528e8740] [SN: 27895616] DnX protocol version and timeout were set successfully
+[TID: 0x00007efc528e8740] [SN: 27895616] Sending "Clear Data" DnX command
+[TID: 0x00007efc528e8740] [SN: 27895616] TX: Payload only: no
+[TID: 0x00007efc528e8740] [SN: 27895616] TX: Data length: 48
+[TID: 0x00007efc528e8740] [SN: 27895616] TX: Command: 10
+[TID: 0x00007efc528e8740] [SN: 27895616] TX: Marker: 0
+[TID: 0x00007efc528e8740] [SN: 27895616] TX: Header length: 16
+[TID: 0x00007efc528e8740] [SN: 27895616] TX: Additional data length: 0
+[TID: 0x00007efc528e8740] [SN: 27895616] TX: Message length: 64
+[TID: 0x00007efc528e8740] Configuring device IO, serial: 27895616 (MorganfieldWdAPI::MorganfieldWd::Write)
+[TID: 0x00007efc528e8740] Configure device IO by serial: 27895616 (MorganfieldWdAPI::MorganfieldWd::Write->MorganfieldWdAPI::MorganfieldWd::ConfigureDeviceIO)
+[TID: 0x00007efc528e8740] Trying to lock (MorganfieldWdAPI::MorganfieldWd::Write->MorganfieldWdAPI::MorganfieldWd::ConfigureDeviceIO)
+[TID: 0x00007efc528e8740] Locked (MorganfieldWdAPI::MorganfieldWd::Write->MorganfieldWdAPI::MorganfieldWd::ConfigureDeviceIO)
+[TID: 0x00007efc528e8740] Searching DB for device handle (MorganfieldWdAPI::MorganfieldWd::Write->MorganfieldWdAPI::MorganfieldWd::ConfigureDeviceIO)
+[TID: 0x00007efc528e8740] Found device handle: 0x1a9a740 (MorganfieldWdAPI::MorganfieldWd::Write->MorganfieldWdAPI::MorganfieldWd::ConfigureDeviceIO)
+[TID: 0x00007efc528e8740] Searching DB for device IO configuration (MorganfieldWdAPI::MorganfieldWd::Write->MorganfieldWdAPI::MorganfieldWd::ConfigureDeviceIO)
+[TID: 0x00007efc528e8740] Found device IO configuration (MorganfieldWdAPI::MorganfieldWd::Write->MorganfieldWdAPI::MorganfieldWd::ConfigureDeviceIO)
+[TID: 0x00007efc528e8740] Device IO configured, handle: 0x1a9a740 (MorganfieldWdAPI::MorganfieldWd::Write)
+[TID: 0x00007efc528e8740] Calling libusb_bulk_transfer( dev_handle = 0x1a9a740, endpoint = 2, length = 64, timeout  = 5000 ) (MorganfieldWdAPI::MorganfieldWd::Write)
+[TID: 0x00007efc528e8740] Bytes sent: 64 (MorganfieldWdAPI::MorganfieldWd::Write)
+[TID: 0x00007efc528e8740] [SN: 27895616] Reading first packet
+[TID: 0x00007efc528e8740] Configuring device IO, serial: 27895616 (DnxCmd::read->MorganfieldWdAPI::MorganfieldWd::Read)
+[TID: 0x00007efc528e8740] Configure device IO by serial: 27895616 (DnxCmd::read->MorganfieldWdAPI::MorganfieldWd::Read->MorganfieldWdAPI::MorganfieldWd::ConfigureDeviceIO)
+[TID: 0x00007efc528e8740] Trying to lock (DnxCmd::read->MorganfieldWdAPI::MorganfieldWd::Read->MorganfieldWdAPI::MorganfieldWd::ConfigureDeviceIO)
+[TID: 0x00007efc528e8740] Locked (DnxCmd::read->MorganfieldWdAPI::MorganfieldWd::Read->MorganfieldWdAPI::MorganfieldWd::ConfigureDeviceIO)
+[TID: 0x00007efc528e8740] Searching DB for device handle (DnxCmd::read->MorganfieldWdAPI::MorganfieldWd::Read->MorganfieldWdAPI::MorganfieldWd::ConfigureDeviceIO)
+[TID: 0x00007efc528e8740] Found device handle: 0x1a9a740 (DnxCmd::read->MorganfieldWdAPI::MorganfieldWd::Read->MorganfieldWdAPI::MorganfieldWd::ConfigureDeviceIO)
+[TID: 0x00007efc528e8740] Searching DB for device IO configuration (DnxCmd::read->MorganfieldWdAPI::MorganfieldWd::Read->MorganfieldWdAPI::MorganfieldWd::ConfigureDeviceIO)
+[TID: 0x00007efc528e8740] Found device IO configuration (DnxCmd::read->MorganfieldWdAPI::MorganfieldWd::Read->MorganfieldWdAPI::MorganfieldWd::ConfigureDeviceIO)
+[TID: 0x00007efc528e8740] Device IO configured, handle: 0x1a9a740 (DnxCmd::read->MorganfieldWdAPI::MorganfieldWd::Read)
+[TID: 0x00007efc528e8740] Calling libusb_bulk_transfer( dev_handle = 0x1a9a740, endpoint = 82, length = 512, timeout  = 5000 ) (DnxCmd::read->MorganfieldWdAPI::MorganfieldWd::Read)
+[TID: 0x00007efc528e8740] Bytes transferred: 64 (DnxCmd::read->MorganfieldWdAPI::MorganfieldWd::Read)
+[TID: 0x00007efc528e8740] [SN: 27895616] RX: Command: 800010
+[TID: 0x00007efc528e8740] [SN: 27895616] RX: Marker: 0
+[TID: 0x00007efc528e8740] [SN: 27895616] RX: Message length: 64
+[TID: 0x00007efc528e8740] [SN: 27895616] RX: Header length: 20
+[TID: 0x00007efc528e8740] [SN: 27895616] RX: Data length (calculated): 44
+[TID: 0x00007efc528e8740] [SN: 27895616] RX: Additional data length: 0
+[TID: 0x00007efc528e8740] [SN: 27895616] RX: Flags: 0
+[TID: 0x00007efc528e8740] [SN: 27895616] RX: FW status: 0
+[TID: 0x00007efc528e8740] [SN: 27895616] Success
+[TID: 0x00007efc528e8740] [SN: 27895616] Clear data operation had been accomplished succesfully
+[TID: 0x00007efc528e8740] Event queue had been Locked (MorganfieldWdAPI::MorganfieldWd::Deinit->MorganfieldWdAPI::MorganfieldWd::EventPush)
+[TID: 0x00007efc528e8740] Event was pushed the event queue (MorganfieldWdAPI::MorganfieldWd::Deinit->MorganfieldWdAPI::MorganfieldWd::EventPush)
+[TID: 0x00007efc528e8740] Event queue had been unlocked (MorganfieldWdAPI::MorganfieldWd::Deinit->MorganfieldWdAPI::MorganfieldWd::EventPush)
+[TID: 0x00007efc511d8700] Event queue had been Locked (MorganfieldWdAPI::MorganfieldWd::NotificationThreadEntry->MorganfieldWdAPI::MorganfieldWd::EventPop)
+[TID: 0x00007efc511d8700] Event was poped out of the event queue (MorganfieldWdAPI::MorganfieldWd::NotificationThreadEntry->MorganfieldWdAPI::MorganfieldWd::EventPop)
+[TID: 0x00007efc511d8700] Event queue had been unlocked (MorganfieldWdAPI::MorganfieldWd::NotificationThreadEntry->MorganfieldWdAPI::MorganfieldWd::EventPop)
+[TID: 0x00007efc511d8700] NotificationThreadEntry: exit (MorganfieldWdAPI::MorganfieldWd::NotificationThreadEntry)
+[TID: 0x00007efc511d8700] Notification thread finished (MorganfieldWdAPI::MorganfieldWd::NotificationThreadEntry)
+[TID: 0x00007efc528e8740] Calling libusb_close for all opened handles (MorganfieldWdAPI::MorganfieldWd::Deinit)
+[TID: 0x00007efc528e8740] Calling libusb_exit (MorganfieldWdAPI::MorganfieldWd::Deinit)
