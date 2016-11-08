@@ -24,9 +24,10 @@ dldrcli -v --command configpart --fw_dnx "$DNXP" --path "DNX-dldrcli" -v/cfgpart
 
 e "Checking for RPMB"
 dldrcli -v --command readbootmedia --fw_dnx "$DNXP" --path "rpmb.bin" --device 2 --idx 0 --start 0 --blocks 4096 --part 16 \
-    || warn "Unit has a RPMB area and will not support the Slim version of the CSE!" \
+    && warn "Unit has a RPMB area and will not support the Slim version of the CSE!" \
              "This means if you are trying to flash a BIOS version greater then #010, it will fail!" \
-             "This issue can NOT be fixed!"
+             "This issue can NOT be fixed!" \
+    || :
 
 e "Downloading the BIOS"
 dldrcli -v --command downloadfwos --fw_dnx "$DNXP" --device "emmc" --idx 0 --fw_image "$FW" \
