@@ -6,7 +6,10 @@ Intel says you need Windows to flash the BIOS on this guy.
 The thing is, Intel included the tool needed `dldrcli` as a deb! They just didn't write any scripts around it or write
 docs.
 
-`flash.sh`: This is just a script that acts similarly to `Flash.cmd`, just for Linux instead.
+I took all the logic in their Windows batch script and rewrote it for bash. It's much cleaner if you ask me, but then again I'm biased as hell here.
+
+It's located at `flash.sh`, take a look!
+
 
 Usage
 -----
