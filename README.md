@@ -29,6 +29,6 @@ After that, just run `flash.sh` with the firmware you're flashing.
 I have symlinked all required files to the root dir for ease of use.
 
 ```sh
-./flash.sh Joule_C0-X64-Release-131-Public_DNX.bin
+./flash.sh Joule_C0-X64-Release-1D1-Public_DNX.bin
 ```
 

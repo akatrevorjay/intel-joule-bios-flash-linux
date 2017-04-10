@@ -13,13 +13,13 @@ function error          { _script_echo ERROR "$@" >&2; }
 function death          { error "$@"; exit 1; }
 function debug_call     { debug 'call:' "$@"; "$@"; }
 
-FW="${1:?}"
+FW="${1:?Usage: $0 FIRMWARE [DNXP]}"
 DNXP="${2:-DNXP_0x1-prod.bin}"
 
 type -a dldrcli || death "Cannot find \"dldrcli\" in PATH"
 
 e "Provisioning the eMMc"
-dldrcli -v --command configpart --fw_dnx "$DNXP" --path "DNX-dldrcli" -v/cfgpart.xml --device 2 --idx 0 "$FW" \
+dldrcli -v --command configpart --fw_dnx "$DNXP" --path "DNX-dldrcli/cfgpart.xml" --device 2 --idx 0 "$FW" \
     || warn "Provisioning failed, probably already provisioned."
 
 e "Checking for RPMB"
