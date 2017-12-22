@@ -1,11 +1,15 @@
 ============================================================
-BIOS Version #1D1 - 2017-03-20
+BIOS Version #1J2 - 2017-06-26
 ------------------------------------------------------------
-  1. GPIO Controller _AEI method blocking Windows boot when boot option is Linux
-  2. Enabling Kernel Debugger causes BIOS to hang
-===========================================================
+CHANGES
+  1. Boot time improved through POST simplification
+  2. Added back the camera BIOS Setup strings.
+  3. Fixed increase in idle power consumption with 1F1
+  4. Added BIOS entry password protection (SHA256 hash)
+============================================================
 
 ============================================================
-BIOS Version #193 - 2017-02-19
+BIOS Version #1H3 - 2017-06-02
 ------------------------------------------------------------
  Previous Version
+============================================================

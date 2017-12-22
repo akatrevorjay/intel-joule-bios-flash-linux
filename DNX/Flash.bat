@@ -30,8 +30,8 @@ REM OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 REM
 SetLocal EnableDelayedExpansion EnableExtensions
 
-set BATCH_FILE_VERSION=1.1.12
-set PROJECT_NAME=Joule
+set BATCH_FILE_VERSION=1.1.15
+set PROJECT_NAME=
 set "TOOL_NAME=%~nx0"
 echo ===============================================================================
 echo  Intel(R) %PROJECT_NAME% %TOOL_NAME% version #%BATCH_FILE_VERSION%
@@ -52,7 +52,7 @@ set ExitCode=0
 REM
 REM Set default flags
 REM
-set ClearRpmbFlag=TRUE
+set ClearRpmbFlag=FALSE
 set OldFlag=FALSE
 set PpvFlag=FALSE
 set ProdFlag=TRUE
@@ -75,7 +75,14 @@ if /i "%~1"=="" goto Usage
 if /i "%~1"=="/?" goto Usage
 if /i "%~1"=="-?" goto Usage
 
+if /i "%~1"=="-clear" (
+  set ClearRpmbFlag=TRUE
+  shift
+  goto OptLoop
+)
+
 if /i "%~1"=="-noclear" (
+  echo WARNING: -noclear switch has now been depracated.
   set ClearRpmbFlag=FALSE
   shift
   goto OptLoop
@@ -144,7 +151,9 @@ REM
 REM Convert to relative firmware path
 REM
 call :RelativePath "%~1" FirmwareImagePath
-set FirmwareImagePath=%CurrentDirectory%\%FirmwareImagePath%
+if not "%FirmwareImagePath:~1,1%" == ":" (
+  set FirmwareImagePath=%CurrentDirectory%\%FirmwareImagePath%
+)
 if not exist "%FirmwareImagePath%" (
   REM We're clueless. Give up.
   echo ERROR: Firmware Image file %FirmwareImagePath% does not exist^^^!
@@ -235,6 +244,7 @@ REM
 :Usage
   echo.
   echo %TOOL_NAME% [options] Firmware
+  echo      -clear       Clear the RPMB area
   echo      -noclear     Do not clear the RPMB area
   echo      -noprod      Force use of non-production DNXP-0x1.bin
   echo      -old         Use CSE 1108 version of DNXP-0x1.bin (defaults to latest)

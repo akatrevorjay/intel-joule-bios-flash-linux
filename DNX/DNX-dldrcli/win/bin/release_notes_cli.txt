@@ -1,0 +1,22 @@
+
+==========================================================
+DnX CLI 
+Version 3.0.10.1129
+
+
+==========================================================
+- Internal usage only
+
+==========================================================
+Revision History
+==========================================================
+[2015-03-21 11:49:15+00:00][Other]
+	Description: Fix KW issues.
+[2015-11-23 11:49:15+00:00][RCR]
+	Link: https://hsdes.intel.com/home/default.html#article?id=1304130274
+	Description: [IoTG] Enable the DnX support for SPI write
+[2015-11-17 12:52:30+00:00][Other]
+	Description: Copyrights added
+[2015-10-11 14:07:53+00:00][RCR]
+	Link: https://hsdes.intel.com/home/default.html#article?id=1206617354
+	Description: Request to add a DnX command to query the UFS bRefClk
