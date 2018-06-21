@@ -1,0 +1,59 @@
+============================================================
+BIOS Version #1H3 - 2017-06-02
+------------------------------------------------------------
+NOTE
+     As indictaed in the release notes for BIOS 1F1 there  
+	 was a change to the PMIC_PWRGOOD signal which 
+	 may have resulted in unexpected behavior on some 
+	 custom designed expansion/carrier boards.
+	 This behaviour may also be present in BIOS 1D1.
+	 An update is included in BIOS 1H3 intended to 
+	 alleviate this and Intel recommends that users
+	 always update to the latest BKC (BIOS+OS)
+	 
+
+NEW
+     This release includes a version of the BIOS that 
+	 supports custom designed expansion/carrier boards 
+	 which provide PCIe connectors to the Joule(R) 
+	 module. These binaries can be found from in PCIe 
+	 folder.
+
+	 Please note that PCIe and USB3_1 share the same 
+	 compute module pins and thus an expansion board 
+	 can only enable either the PCIe or USB3_1 interface.
+
+     Two versions of BIOS are provided, a PCIe version and 
+	 a USB3 version. The BIOS must be flashed to change
+	 if USB3 or PCIe is enabled. All other aspects
+	 of the BIOS are common between USB3 and PCIe versions.
+	 
+	 
+CHANGES
+  1. Fixed support for example Atmel touchscreen ASL file
+  2. Fixed Unicode issue in LoadDefaultSetupVar.c
+  3. Added BIOS Setup option to control PL2.
+  4. Fixed issue with entering sleep state
+  5. Update to alternate pad configs for the EEPROM
+  6. Updated PMC firmware #05.0A.00
+  7. Removal of Intel PCIe UNDI
+  7. Removal of unicode encoding in LoadDefaultSetupVar.c
+     comments
+  8. Windows specific ASL for USB Type-C enabling
+
+ 
+ Known Issues:
+     An update to the BIOS save/restore configuration is
+	 included in release 1H3. When migrating to BIOS 1H3 
+	 or later from an earlier version this will require 
+	 clearing the BIOS NvStorage using the Flash utility's 
+	 "-clear" command (automatic for the Flash.bat).
+     This will result in the user losing any changes to 
+     BIOS Setup.
+	 This will not be required when subsequently migrating
+	 to a BIOS newer than 1H3. 
+============================================================
+BIOS Version #1F1 - 2017-04-13
+------------------------------------------------------------
+ Previous Version
+============================================================
