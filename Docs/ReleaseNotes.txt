@@ -1,0 +1,15 @@
+============================================================
+BIOS Version #1J2 - 2017-06-26
+------------------------------------------------------------
+CHANGES
+  1. Boot time improved through POST simplification
+  2. Added back the camera BIOS Setup strings.
+  3. Fixed increase in idle power consumption with 1F1
+  4. Added BIOS entry password protection (SHA256 hash)
+============================================================
+
+============================================================
+BIOS Version #1H3 - 2017-06-02
+------------------------------------------------------------
+ Previous Version
+============================================================
