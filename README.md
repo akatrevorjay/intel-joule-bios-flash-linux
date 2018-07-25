@@ -32,3 +32,9 @@ I have symlinked all required files to the root dir for ease of use.
 ./flash.sh Joule_C0-X64-Release-1D1-Public_DNX.bin
 ```
 
+Flashing an older BIOS
+----------------------
+
+I've kept a git tag for each version I've used as I've upgraded, as well as kept an `./archives` folder more recently.
+
+IOW, Extract away or simply `git checkout`. Choice is yours.
