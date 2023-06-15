@@ -32,6 +32,12 @@ I have symlinked all required files to the root dir for ease of use.
 ./flash.sh Joule_C0-X64-Release-1D1-Public_DNX.bin
 ```
 
+If you are unable to found `dldrcli` when runing the `./flash.sh`, you can edit `~/.bashrc` and add the following to the end of file.
+
+```sh
+export PATH=$PATH:/opt/bxt_dnx_tool/bin
+```
+
 Flashing an older BIOS
 ----------------------
 
